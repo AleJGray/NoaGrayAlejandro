@@ -1,0 +1,458 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+   display: flex;
+   flex-direction: column;
+   min-height: 100vh;
+   background-color: rgb(241, 240, 240);
+   font-family: 'Lato', sans-serif;
+}
+
+header{
+   background-color: rgb(198, 42, 42);
+   color: white;
+}
+
+nav ul li{
+   list-style-type: none;
+}
+
+a{
+   text-decoration: none;
+   color: white;
+}
+a:hover{
+   font-weight: bold;
+}
+
+footer{
+   background-color: black;
+   color: white;
+   margin-bottom: 0px;
+}
+
+ header {
+    grid-area: header;
+ }
+ footer {
+    grid-area: footer;
+ }
+
+ article{
+   margin: 2vh;
+   padding-left: 4vh;
+   padding-right: 4vh;
+   text-align: center;
+   font-family: 'Lato', sans-serif;
+   font-size: 16px;
+ }
+
+ .relleno-gris{
+   grid-area: relleno-gris;
+   background-color: rgb(218,218,218);
+   width: 100%;
+   height: 3vh;
+ }
+
+ .slider {
+    grid-area: slider;   
+ }
+
+ .ofertas-imperdibles {
+    grid-area: ofertas-imperdibles;
+    background-color: rgb(218, 218, 218);     
+ }
+
+ .banner1{
+   grid-area: banner1; 
+ }
+ .oportunidades{
+   grid-area: oportunidades;
+ }
+ .como-comprar1{
+   grid-area: como-comprar1;
+ }
+ .como-comprar2{
+   grid-area: como-comprar2;
+ }
+ .como-pagar{
+   grid-area: como-pagar;
+ }
+ .entrega{
+   grid-area: entrega;
+ }
+ .seguridad{
+   grid-area: seguridad;
+ }
+ .somos-texto{
+   grid-area: somos-texto;
+ }
+ .experiencia{
+   grid-area: experiencia;
+   align-items: center;
+   margin-left: 10vh;
+   margin-right: 10vh;
+ }
+ .experiencia-imagen{
+   grid-area: experiencia-imagen;
+   text-align: center;
+ }
+
+ .padre-compra-online{
+   grid-area: padre-compra-online;
+ }
+
+ .logueo{
+   grid-area: logueo;
+   padding: 20px;
+   text-align: center;
+   font-family: 'Lato', sans-serif;
+   background-color:rgb(218,218,218);
+ }
+
+ h1{
+   font-family: 'Lato', sans-serif;
+   margin: 10px;
+ }
+
+ .crear-cuenta{
+   grid-area: crear-cuenta;
+   font-family: 'Lato', sans-serif;
+   padding: 20px;
+   text-align: center;
+ }
+
+ .catalogos {
+   grid-area: catalogos;
+   text-align: center;
+ }
+
+ .completo-junio{
+   grid-area: completo-junio;
+ }
+
+ .dia-del-padre{
+   grid-area: dia-del-padre;
+ }
+
+ .especial-coloracion{
+   grid-area: especial-coloracion;
+ }
+
+ .formulario.grilla{
+   grid-area: formulario;
+ }
+
+.grilla{
+    display: grid;
+    grid-template-areas:
+      "header"
+      "slider"
+      "ofertas-imperdibles"
+      "banner1"
+      "oportunidades"
+      "como-comprar1"
+      "como-comprar2"
+      "como-pagar"
+      "entrega"
+      "seguridad"
+      "footer";
+ }
+
+ .grilla-nosotros {
+   display: grid;
+   grid-template-areas:
+     "header"
+     "slider"
+     "relleno-gris"
+     "experiencia"
+     "footer";
+}
+
+.grilla-compra-online{
+   display: grid;
+   grid-template-areas:
+     "header"
+     "padre-compra-online"
+     "footer";
+}
+
+.grilla-catalogo{
+   display: grid;
+   grid-template-areas:
+     "header"
+     "relleno-gris"
+     "catalogos"
+     "footer";
+}
+
+.grilla-contacto{
+   display: grid;
+   grid-template-areas:
+     "header"
+     "bloque-padre"
+     "formulario-grilla"
+     "footer";
+}
+
+.padre-catalogos{
+   display: grid;
+   grid-template-areas:
+   "completo-junio"
+   "dia-del-padre"
+   "especial-coloracion"   ;
+}
+
+.catalogos img{
+   width: 200px;
+   height: 300px;
+}
+
+.padre{
+   display: grid;
+   align-items: center;
+   grid-template-areas: 
+   "experiencia-imagen"
+   "somos-texto";
+}
+
+ .border {
+    border: 1px solid black;
+ }
+
+ .menu-horizontal{
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
+   height: 10vh;
+   font-family: 'Lato', sans-serif;
+   font-size: 14px;
+   font-weight: normal;
+   text-decoration: none;
+}
+
+ul.menu-horizontal li{
+   color: white;
+   display:flex;
+   flex-direction: row;
+   justify-content: center;
+   text-align: center;
+   padding: 10px;
+   margin: 10px;
+   text-decoration: none;
+}
+
+.slider{
+   display: flex;
+   justify-content: space-around;
+}
+
+.slider img, .banner1 img{
+   width: 90vh;
+}
+
+h2{
+   font-style: normal;
+   font-family: 'Lato', sans-serif;
+   text-align: left;
+   font-size: 14px;
+   padding: 10px;
+}
+
+.ofertas-imperdibles{
+   background-color: rgb(225, 225, 225) ;
+   padding: 15px;
+}
+
+.ofertas-imperdibles img{
+   width: 300px;
+   height: 250px;
+}
+
+.ofertas-imperdibles-productos{
+   background-color: rgb(225, 225, 225);
+   display: grid;
+   grid-template-columns: 0fr;
+   grid-template-rows: 0fr;
+   gap: 15px;
+   justify-items: center;
+   justify-content: center;
+}
+
+.banner1{
+   display: flex;
+   justify-content: space-around;
+}
+
+.formulario-grilla{
+   background-color: rgb(218,218,218);
+   margin: 5vh;
+   padding: 1vh;
+}
+
+.bloque-padre{
+   grid-area: bloque-padre;
+   display: grid;
+   align-items: center;
+   justify-content: center;
+ }
+
+.bloque-contacto{
+   grid-area: bloque-contacto;
+   display: grid;
+   align-items: center;
+   grid-template-areas: 
+   "llamanos                  whatsapp"
+   "mail                      horarios";
+   padding: 5vh;
+   color: white;
+}
+
+.llamanos{
+   grid-area: llamanos;
+   background-color: rgb(51, 51, 51);
+   height: 10vh;
+}
+
+.whatsapp{
+   grid-area: whatsapp;
+   background-image : url('../images/whatsapp.png');
+   background-size: cover;
+   height: 10vh;
+}
+
+.mail{
+   grid-area: mail;
+   background-color: white;
+   color: black;
+   height: 10vh;
+}
+
+.horarios{
+   grid-area: horarios;
+   background-color: white;
+   color: black;
+   height: 10vh;
+}
+
+.formulario-grilla-padre{
+   grid-area: formulario-grilla-padre;
+   display: grid;
+   align-items: center;
+   justify-content: center;
+}
+
+.form-nombre{
+   grid-area: form-nombre;
+   padding: 0.5vh;
+}
+
+.form-apellido{
+   grid-area: form-apellido;
+   padding: 0.5vh;
+}
+
+.form-email{
+   grid-area: form-email;
+   padding: 0.5vh;
+}
+
+.form-celular{
+   grid-area: form-celular;
+   padding: 0.5vh;
+}
+
+.form-comentarios{
+   grid-area: form-comentarios;
+   padding: 0.5vh;
+}
+
+input{
+   height: 3vh;
+   width: 30vh;
+   padding: 0.5vh;
+}
+
+textarea{
+   height: 30vh;
+   width: 30vh;
+
+}
+
+@media (min-width:768px){
+   .grilla {
+      display: grid;
+      grid-template-areas:
+        "header                  header"
+        "slider                  slider"
+        "ofertas-imperdibles     ofertas-imperdibles"
+        "banner1                 banner1"
+        "oportunidades           oportunidades"
+        "como-comprar1           como-comprar2"
+        "como-pagar              como-pagar"
+        "entrega                 entrega"
+        "seguridad               seguridad"
+        "footer                  footer";
+   }
+
+   .grilla-contacto{
+      display: grid;
+      grid-template-areas:
+        "header               header"
+        "formulario-grilla    bloque-padre"
+        "footer               footer";
+   }
+
+   .bloque-padre{
+      grid-area: bloque-padre;
+      display: grid;
+      align-items: center;
+      justify-content: center;
+      align-content: center;
+    }
+
+   .ofertas-imperdibles-productos{
+      background-color: rgb(225, 225, 225);
+      display: flex;
+      flex-wrap: wrap;
+      justify-items: center;
+      justify-content: center;
+
+   }
+   .grilla-nosotros {
+      display: grid;
+      grid-template-areas:
+        "header               header"
+        "slider               slider"
+        "relleno-gris         relleno-gris"
+        "experiencia          experiencia"
+        "footer               footer";
+   }
+
+
+   .padre{
+      display: grid;
+      grid-template-areas: 
+      "experiencia-imagen  somos-texto";
+   }
+
+   .padre-compra-online{
+      display: grid;
+      grid-template-areas: 
+      "logueo  crear-cuenta";
+   }
+
+   .padre-catalogos{
+      display: grid;
+      grid-template-areas:
+      "completo-junio      dia-del-padre"
+      "especial-coloracion especial-coloracion"   ;
+   }
+}
