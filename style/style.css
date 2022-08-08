@@ -14,6 +14,11 @@ body{
    font-family: 'Lato', sans-serif;
 }
 
+.nav {
+   display: flex;
+   justify-content: end;
+}
+
 header{
    background-image: linear-gradient(to top, red, white);
    background-color: rgb(198, 42, 42);
